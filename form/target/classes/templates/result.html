@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Kết quả</title>
+</head>
+<body>
+<h2>Kết quả [[${action}]]</h2>
+<p>Tên người dùng: <span th:text="${user.username}"></span></p>
+<p>Email: <span th:text="${user.email}"></span></p>
+<a th:href="@{/login}">Đăng nhập</a> | <a th:href="@{/register}">Đăng ký</a>
+</body>
+</html>
